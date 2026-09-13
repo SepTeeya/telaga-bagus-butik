@@ -10,7 +10,7 @@ class AuthController extends Controller
     // 1. Menampilkan halaman form login
     public function login()
     {
-        return view('auth.login');
+        return view('Auth.login');
     }
 
     // 2. Mengecek kecocokan username dan password
