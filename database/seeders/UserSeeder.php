@@ -8,33 +8,56 @@ use Illuminate\Support\Facades\Hash;
 
 class UserSeeder extends Seeder
 {
+    /**
+     * Run the database seeds.
+     */
     public function run(): void
     {
-        // 1. Akun Super Admin / Pemilik Butik
+        // 1. Akun Super Admin / Pemilik Butik (Owner)
         User::updateOrCreate(
             ['username' => 'owner'],
             [
-                'nama_user' => 'Pemilik Butik (Owner)',
+                'nama_user' => 'Pemilik Butik',
                 'password'  => Hash::make('123456'),
                 'role'      => 'owner',
             ]
         );
 
-        // 2. Penjahit 1 (Pak Budi)
+        // 2. Akun Administrator Sistem (Admin)
         User::updateOrCreate(
-            ['username' => 'budi'],
+            ['username' => 'admin'],
             [
-                'nama_user' => 'Pak Budi',
+                'nama_user' => 'Yudistira',
+                'password'  => Hash::make('123456'),
+                'role'      => 'admin',
+            ]
+        );
+
+        // 3. Penjahit 1 (Mas Galang)
+        User::updateOrCreate(
+            ['username' => 'galang'],
+            [
+                'nama_user' => 'Mas Galang',
                 'password'  => Hash::make('123456'),
                 'role'      => 'penjahit',
             ]
         );
 
-        // 3. Penjahit 2 (Bu Siti)
+        // 4. Penjahit 2 (Bu Nusa)
         User::updateOrCreate(
-            ['username' => 'siti'],
+            ['username' => 'nusa'],
             [
-                'nama_user' => 'Bu Siti',
+                'nama_user' => 'Bu Nusa',
+                'password'  => Hash::make('123456'),
+                'role'      => 'penjahit',
+            ]
+        );
+
+        // 5. Penjahit 3 (Bu Ayu)
+        User::updateOrCreate(
+            ['username' => 'ayu'],
+            [
+                'nama_user' => 'Bu Ayu',
                 'password'  => Hash::make('123456'),
                 'role'      => 'penjahit',
             ]

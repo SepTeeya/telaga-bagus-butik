@@ -5,13 +5,19 @@ namespace Database\Factories;
 use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Str;
 
 /**
  * @extends Factory<User>
  */
 class UserFactory extends Factory
 {
+    /**
+     * The name of the factory's corresponding model.
+     *
+     * @var string
+     */
+    protected $model = User::class;
+
     /**
      * The current password being used by the factory.
      */
@@ -25,21 +31,40 @@ class UserFactory extends Factory
     public function definition(): array
     {
         return [
-            'name' => fake()->name(),
-            'email' => fake()->unique()->safeEmail(),
-            'email_verified_at' => now(),
+            'nama_user' => fake()->name(),
+            'username' => fake()->unique()->userName(),
             'password' => static::$password ??= Hash::make('password'),
-            'remember_token' => Str::random(10),
+            'role' => 'admin',
         ];
     }
 
     /**
-     * Indicate that the model's email address should be unverified.
+     * State untuk role Pemilik (Owner).
      */
-    public function unverified(): static
+    public function owner(): static
     {
         return $this->state(fn (array $attributes) => [
-            'email_verified_at' => null,
+            'role' => 'owner',
+        ]);
+    }
+
+    /**
+     * State untuk role Administrator.
+     */
+    public function admin(): static
+    {
+        return $this->state(fn (array $attributes) => [
+            'role' => 'admin',
+        ]);
+    }
+
+    /**
+     * State untuk role Penjahit.
+     */
+    public function penjahit(): static
+    {
+        return $this->state(fn (array $attributes) => [
+            'role' => 'penjahit',
         ]);
     }
 }

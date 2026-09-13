@@ -23,6 +23,10 @@ class User extends Authenticatable
         'role',
     ];
 
+    protected $hidden = [
+        'password',
+    ];
+
     public function pesanans()
     {
         return $this->hasMany(Pesanan::class,'id_user','id_user');
