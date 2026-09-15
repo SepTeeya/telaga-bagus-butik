@@ -15,20 +15,20 @@ class UserSeeder extends Seeder
     {
         // 1. Akun Super Admin / Pemilik Butik (Owner)
         User::updateOrCreate(
-            ['username' => 'owner'],
+            ['username' => 'owner512'],
             [
-                'nama_user' => 'Pemilik Butik',
-                'password'  => Hash::make('123456'),
+                'nama_user' => 'Owner Telaga Bagus',
+                'password'  => Hash::make('butik512437'),
                 'role'      => 'owner',
             ]
         );
 
         // 2. Akun Administrator Sistem (Admin)
         User::updateOrCreate(
-            ['username' => 'admin'],
+            ['username' => 'yudistira512'],
             [
                 'nama_user' => 'Yudistira',
-                'password'  => Hash::make('123456'),
+                'password'  => Hash::make('butik512437'),
                 'role'      => 'admin',
             ]
         );
@@ -38,7 +38,7 @@ class UserSeeder extends Seeder
             ['username' => 'galang'],
             [
                 'nama_user' => 'Mas Galang',
-                'password'  => Hash::make('123456'),
+                'password'  => Hash::make('butik437'),
                 'role'      => 'penjahit',
             ]
         );
@@ -48,7 +48,7 @@ class UserSeeder extends Seeder
             ['username' => 'nusa'],
             [
                 'nama_user' => 'Bu Nusa',
-                'password'  => Hash::make('123456'),
+                'password'  => Hash::make('butik437'),
                 'role'      => 'penjahit',
             ]
         );
@@ -58,7 +58,7 @@ class UserSeeder extends Seeder
             ['username' => 'ayu'],
             [
                 'nama_user' => 'Bu Ayu',
-                'password'  => Hash::make('123456'),
+                'password'  => Hash::make('butik437'),
                 'role'      => 'penjahit',
             ]
         );

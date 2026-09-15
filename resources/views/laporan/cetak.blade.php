@@ -64,8 +64,8 @@
     <!-- KOP RESMI LAPORAN -->
     <div class="header-kop text-center">
         <h2 class="fw-bold m-0 tracking-wide text-uppercase" style="letter-spacing: 2px;">TELAGA BAGUS BUTIK</h2>
-        <p class="m-0 small">Spesialis Jahit Busana Pria & Wanita, Kebaya, Gaun, dan Busana Tradisional</p>
-        <p class="m-0 small text-muted">Jl. Butik Indah No. 123, Telp / WA: 0812-3456-7890</p>
+        <p class="m-0 small">Spesialis Jahit Busana Adat Pria & Wanita</p>
+        <p class="m-0 small text-muted">Jl. Seroja No. 48,Tonja, Kec. Denpasar Utara, Kota Denpasar, Telp / WA: 0823-4288-1519</p>
     </div>
 
     <!-- JUDUL LAPORAN -->

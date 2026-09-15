@@ -89,7 +89,7 @@
                 <h3 class="kop-title mb-0 d-flex align-items-center gap-2">
                     <i class="bi bi-scissors text-primary"></i> TELAGA BAGUS BUTIK
                 </h3>
-                <span class="text-muted small">Jasa Jahit & Busana Adat Professional</span>
+                <span class="text-muted small">Spesialis Jahit Busana Adat Pria & Wanita</span>
             </div>
             <div class="col-5 text-end">
                 <span class="badge bg-primary-subtle text-primary border border-primary-subtle px-3 py-1 fw-bold fs-6">KWITANSI DP</span>
